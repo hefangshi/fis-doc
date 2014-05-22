@@ -1,5 +1,5 @@
 ## 快速入门
- - 工具安装   => beginning/getting-started.md *
+ - 工具使用   => beginning/getting-started.md *
  - 资源压缩   => beginning/getting-started.md *
  - 资源合并   => beginning/compress.md *
 
