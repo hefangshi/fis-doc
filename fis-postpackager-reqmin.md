@@ -13,7 +13,7 @@ fis-postpackager-reqmin
 
 ## 流程
 
- 1. 分析页面脚本和样式声明，将显示资源与页面依赖合并
+ 1. 分析页面脚本和样式声明，将显示定义的资源与页面依赖合并
  1. 分析页面独立脚本，移动到页面底部
  1. 递归遍历依赖，记录命中的打包资源A
  1. 将所有没有命中打包资源的资源按照依赖顺序进行合并B
@@ -21,4 +21,5 @@ fis-postpackager-reqmin
 
 ## 额外
 
-与[fis-postpackager-modjs](https://github.com/fouber/fis-postpackager-modjs)整合需要将**样式资源**从resourceMap中剔除
+ - 与[fis-postpackager-modjs](https://github.com/fouber/fis-postpackager-modjs)整合需要将**样式资源**从resourceMap中剔除
+ - 需要剔除```<!--[if lt IE 9]><script src="http://hefangshi.github.io/fis-site/assets/themes/fis/js/html5shiv.js"></script><![endif]-->```资源，不作处理
